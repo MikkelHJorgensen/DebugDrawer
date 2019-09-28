@@ -222,7 +222,7 @@ You could use `DebugDrawer` or `DebugView` depending on your needs
                 new FpsModule(Takt.stock(getApplication()).useCustomControl()),
                 new LocationModule(this),
                 new ScalpelModule(this),
-                new TimberModule(),
+                new TimberModule("your-file-authority"),
                 new OkHttp3Module(okHttpClient),
                 new PicassoModule(picasso),
                 new GlideModule(Glide.get(getContext())),
