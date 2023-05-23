@@ -1,6 +1,6 @@
 # Android Debug Drawer
 
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Debug%20Drawer-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/1892) [![](https://jitpack.io/v/lenguyenthanh/debugdrawer.svg)](https://jitpack.io/#lenguyenthanh/debugdrawer)
+[![Mikkel Jorgensen](https://jitpack.io/v/MikkelHJorgensen/DebugDrawer.svg)](https://jitpack.io/#MikkelHJorgensen/DebugDrawer)
 
 Faster development with Debug Drawer
 

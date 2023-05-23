@@ -44,8 +44,8 @@ dependencies {
     implementation "com.google.android.gms:play-services-location:$rootProject.ext.playServiceVersion"
     implementation "com.github.bumptech.glide:glide:$rootProject.ext.glideVersion"
     implementation "com.github.pedrovgs:lynx:$rootProject.ext.lynxVersion"
-    debugImplementation "com.readystatesoftware.chuck:library:$rootProject.ext.chukVersion"
-    releaseImplementation "com.readystatesoftware.chuck:library-no-op:$rootProject.ext.chukVersion"
+//    debugImplementation "com.readystatesoftware.chuck:library:$rootProject.ext.chukVersion"
+//    releaseImplementation "com.readystatesoftware.chuck:library-no-op:$rootProject.ext.chukVersion"
 
     /*
     debugImplementation 'io.palaima.debugdrawer:debugdrawer:0.7.3'

@@ -22,7 +22,7 @@ dependencies {
     implementation project(':debugdrawer-base')
 
     compileOnly "com.github.pedrovgs:lynx:$rootProject.ext.lynxVersion"
-    compileOnly "com.readystatesoftware.chuck:library:$rootProject.ext.chukVersion"
+//    compileOnly "com.readystatesoftware.chuck:library:$rootProject.ext.chukVersion"
 }
 
 ext {
