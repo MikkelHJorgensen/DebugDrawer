@@ -158,7 +158,7 @@ public class DebugViewActivity extends AppCompatActivity {
 
         return new OkHttpClient.Builder()
             .cache(cache)
-            .addInterceptor(LogsModule.chuckInterceptor(app))
+//            .addInterceptor(LogsModule.chuckInterceptor(app))
             .addInterceptor(NetworkQualityModule.interceptor(app))
             .readTimeout(10, TimeUnit.SECONDS)
             .writeTimeout(10, TimeUnit.SECONDS)

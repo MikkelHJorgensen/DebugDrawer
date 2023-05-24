@@ -17,7 +17,6 @@
 
 package io.palaima.debugdrawer.logs;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,11 +26,8 @@ import androidx.annotation.Nullable;
 
 import com.github.pedrovgs.lynx.LynxActivity;
 import com.github.pedrovgs.lynx.LynxConfig;
-import com.readystatesoftware.chuck.Chuck;
-import com.readystatesoftware.chuck.ChuckInterceptor;
 
 import io.palaima.debugdrawer.base.DebugModuleAdapter;
-import okhttp3.Interceptor;
 
 public class LogsModule extends DebugModuleAdapter {
 
@@ -70,12 +66,12 @@ public class LogsModule extends DebugModuleAdapter {
         this.lynxConfig = lynxConfig;
     }
 
-    public static Interceptor chuckInterceptor(Context context) {
-        if (!HAS_CHUCK) {
-            throw new RuntimeException("Chuck dependency is not found");
-        }
-        return new ChuckInterceptor(context).showNotification(false);
-    }
+//    public static Interceptor chuckInterceptor(Context context) {
+//        if (!HAS_CHUCK) {
+//            throw new RuntimeException("Chuck dependency is not found");
+//        }
+//        return new ChuckInterceptor(context).showNotification(false);
+//    }
 
     @NonNull
     @Override
@@ -102,7 +98,7 @@ public class LogsModule extends DebugModuleAdapter {
                 if (!HAS_CHUCK) {
                     throw new RuntimeException("Chuck dependency is not found");
                 } else {
-                    view.getContext().startActivity(Chuck.getLaunchIntent(view.getContext()));
+//                    view.getContext().startActivity(Chuck.getLaunchIntent(view.getContext()));
                 }
             }
         });
