@@ -71,16 +71,16 @@ public class ScrimInsetsFrameLayout extends FrameLayout {
         setWillNotDraw(true);
     }
 
-    @Override
-    protected boolean fitSystemWindows(Rect insets) {
-        this.insets = new Rect(insets);
-        setWillNotDraw(insetForeground == null);
-        ViewCompat.postInvalidateOnAnimation(this);
-        if (onInsetsCallback != null) {
-            onInsetsCallback.onInsetsChanged(insets);
-        }
-        return true; // consume insets
-    }
+//    @Override
+//    protected boolean fitSystemWindows(Rect insets) {
+//        this.insets = new Rect(insets);
+//        setWillNotDraw(insetForeground == null);
+//        ViewCompat.postInvalidateOnAnimation(this);
+//        if (onInsetsCallback != null) {
+//            onInsetsCallback.onInsetsChanged(insets);
+//        }
+//        return true; // consume insets
+//    }
 
     @Override
     public void draw(Canvas canvas) {

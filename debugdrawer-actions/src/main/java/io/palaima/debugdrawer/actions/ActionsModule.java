@@ -1,5 +1,6 @@
 package io.palaima.debugdrawer.actions;
 
+import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,7 +39,9 @@ public class ActionsModule implements DebugModule {
 
         if (actions.isEmpty()) {
             final TextView noActionsLabel = new TextView(parent.getContext());
-            noActionsLabel.setTextColor(parent.getResources().getColor(android.R.color.white));
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                noActionsLabel.setTextColor(parent.getResources().getColor(android.R.color.white, null));
+            }
             noActionsLabel.setText("No actions added");
             view.addView(noActionsLabel);
         } else {

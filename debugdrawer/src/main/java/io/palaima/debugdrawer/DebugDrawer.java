@@ -433,7 +433,7 @@ public class DebugDrawer {
             if (sliderBackgroundColor != 0) {
                 sliderLayout.setBackgroundColor(sliderBackgroundColor);
             } else if (sliderBackgroundColorRes != -1) {
-                sliderLayout.setBackgroundColor(activity.getResources().getColor(sliderBackgroundColorRes));
+                sliderLayout.setBackgroundColor(activity.getResources().getColor(sliderBackgroundColorRes, null));
             } else if (sliderBackgroundDrawable != null) {
                 UIUtils.setBackground(sliderLayout, sliderBackgroundDrawable);
             } else if (sliderBackgroundDrawableRes != -1) {

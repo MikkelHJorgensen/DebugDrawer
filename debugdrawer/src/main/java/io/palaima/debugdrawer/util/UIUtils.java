@@ -38,7 +38,7 @@ public class UIUtils {
     @SuppressLint("NewApi")
     public static void setBackground(View v, Drawable d) {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN) {
-            v.setBackgroundDrawable(d);
+            v.setBackground(d);
         } else {
             v.setBackground(d);
         }
@@ -65,7 +65,7 @@ public class UIUtils {
         Drawable d = null;
         try {
             if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
-                d = c.getResources().getDrawable(drawableRes);
+                d = c.getResources().getDrawable(drawableRes, null);
             } else {
                 d = c.getResources().getDrawable(drawableRes, c.getTheme());
             }

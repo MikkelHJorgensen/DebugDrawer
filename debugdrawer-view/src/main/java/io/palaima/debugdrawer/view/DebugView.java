@@ -31,7 +31,7 @@ public class DebugView extends LinearLayout {
         TypedArray a = context.obtainStyledAttributes(attrSet, attrs);
         Drawable windowBackground = a.getDrawable(0);
         a.recycle();
-        setBackgroundDrawable(windowBackground);
+        setBackground(windowBackground);
     }
 
     /**

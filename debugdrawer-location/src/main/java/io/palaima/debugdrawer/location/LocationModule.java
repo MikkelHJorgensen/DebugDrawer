@@ -160,12 +160,12 @@ public class LocationModule implements DebugModule {
             return view;
         } else if (!hasPermission) {
             final TextView errorText = new TextView(context);
-            errorText.setTextAppearance(context, R.style.Widget_DebugDrawer_Base_Header);
+//            errorText.setTextAppearance(context, R.style.Widget_DebugDrawer_Base_Header);
             errorText.setText(R.string.dd_debug_drawer_location_no_permission);
             return errorText;
         } else {
             final TextView errorText = new TextView(context);
-            errorText.setTextAppearance(context, R.style.Widget_DebugDrawer_Base_Header);
+//            errorText.setTextAppearance(context, R.style.Widget_DebugDrawer_Base_Header);
             errorText.setText(R.string.dd_debug_drawer_location_google_play_unavailable);
             return errorText;
         }
