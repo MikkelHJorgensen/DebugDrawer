@@ -32,3 +32,6 @@ ext {
     artifact = 'debugdrawer-location'
     libraryDescription = 'Android Debug Drawer Location Module'
 }
+
+apply from: rootProject.file('gradle/install-v1.gradle')
+apply from: rootProject.file('gradle/bintray-android-v1.gradle')
