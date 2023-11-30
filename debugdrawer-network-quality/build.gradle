@@ -30,5 +30,3 @@ ext {
     libraryDescription = 'Android Debug Drawer Network Quality Module'
 }
 
-apply from: rootProject.file('gradle/install-v1.gradle')
-apply from: rootProject.file('gradle/bintray-android-v1.gradle')
